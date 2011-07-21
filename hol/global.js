@@ -68,7 +68,7 @@ function gallery()
     jQuery('#gallery .caption').animate({opacity: 0.0}, { queue:false, duration:0 }).animate({height: '1px'}, { queue:true, duration:300 });
 
     //Animate the caption, opacity to 0.7 and heigth to 100px, a slide up effect
-    jQuery('#gallery .caption').animate({opacity: 0.7},100 ).animate({height: '80px'},500 );
+    jQuery('#gallery .caption').animate({opacity: 0.7},100 ).animate({height: '100px'},500 );
 
     //Display the content
     jQuery('#gallery .content').html(caption);
