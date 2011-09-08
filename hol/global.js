@@ -1,13 +1,24 @@
-jQuery(document).ready(function()
+$(document).ready(function()
 {
+    //$("#featured > ul").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 5000, true);
+	$("#featured > ul").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 5000, true);
+	$("#featured > ul").hover(
+		function() {
+			$("#featured > ul").tabs("rotate",0,true);
+		},
+		function() {
+			$("#featured > ul").tabs("rotate",5000,true);
+		}
+	);
 
     Administry.setup();
     
-    jQuery("#news").newsTicker();
+    $("#news").newsTicker();
+    
 
     $('#tabs').tabs();
     
-    slideShow();
+    //slideShow();
 });
 
 var gid = function(x) { return document.getElementById(x); };
